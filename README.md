@@ -104,6 +104,8 @@ print(to_case("user full name", "snake"))     # "user_full_name"
 print(to_case("user full name", "constant"))  # "USER_FULL_NAME"
 ```
 
+Learn more: [Text Case Converter](https://peasytext.com/tools/text-case-converter/) · [Case Conversion Glossary](https://peasytext.com/glossary/)
+
 ### Slug Generation
 
 Convert any text to a URL-friendly slug. Handles Unicode, diacritics, and special characters. Essential for SEO-friendly URLs, file naming, and database keys.
@@ -120,6 +122,8 @@ print(slugify("Hello World", separator="_"))           # "hello_world"
 print(slugify("A very long title here", max_length=10))  # "a-very"
 ```
 
+Learn more: [Slug Generator Tool](https://peasytext.com/tools/slug-generator/) · [What is a URL Slug?](https://peasytext.com/glossary/url-slug/)
+
 ### Text Statistics
 
 Count characters, words, sentences, paragraphs, and lines. Also estimates reading time — useful for blog posts, content management, and SEO metadata.
@@ -134,6 +138,8 @@ print(f"Paragraphs: {stats.paragraphs}")      # 2
 print(f"Reading time: {stats.reading_time}")   # "< 1 min"
 ```
 
+Learn more: [Word Counter Tool](https://peasytext.com/tools/text-counter/) · [Text Statistics Guide](https://peasytext.com/guides/)
+
 ### Line Sorting
 
 Sort lines alphabetically, by length, numerically, or reverse order.
@@ -147,6 +153,8 @@ print(sort_lines(text, "length"))       # apple\nbanana\ncherry
 print(sort_lines("10\n2\n30", "numeric"))  # 2\n10\n30
 ```
 
+Learn more: [Sort Lines Tool](https://peasytext.com/tools/sort-lines/)
+
 ### Base64 Encoding
 
 Encode and decode Base64 with full UTF-8 support — handles emoji, CJK characters, and all Unicode.
@@ -158,6 +166,8 @@ encoded = base64_encode("Hello, 世界! 🌍")
 print(encoded)                    # "SGVsbG8sIOS4lueVjCEg8J+MjQ=="
 print(base64_decode(encoded))     # "Hello, 世界! 🌍"
 ```
+
+Learn more: [Base64 Encoder/Decoder](https://peasytext.com/tools/base64-encode-decode/) · [What is Base64?](https://peasytext.com/glossary/base64/)
 
 ### URL & HTML Encoding
 
@@ -172,6 +182,8 @@ print(url_decode("hello%20world")) # "hello world"
 print(html_encode('<script>alert("xss")</script>'))
 # "&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;"
 ```
+
+Learn more: [URL Encoder/Decoder](https://peasytext.com/tools/url-encode-decode/) · [HTML Entity Encoder](https://peasytext.com/tools/html-entity-encoder/)
 
 ### Find & Replace
 
@@ -188,6 +200,8 @@ print(find_replace("abc123def456", r"\d+", "NUM", regex=True))
 # "abcNUMdefNUM"
 ```
 
+Learn more: [Find & Replace Tool](https://peasytext.com/tools/find-and-replace/)
+
 ### Deduplication
 
 Remove duplicate lines while preserving original order.
@@ -199,6 +213,8 @@ print(dedupe_lines("apple\nbanana\napple\ncherry\nbanana"))
 # "apple\nbanana\ncherry"
 ```
 
+Learn more: [Remove Duplicate Lines Tool](https://peasytext.com/tools/remove-duplicate-lines/)
+
 ### Line Numbers
 
 Add or remove line numbers from text — useful for code snippets and documentation.
@@ -209,6 +225,8 @@ from peasytext import add_line_numbers, remove_line_numbers
 print(add_line_numbers("first\nsecond\nthird"))
 # "1: first\n2: second\n3: third"
 ```
+
+Learn more: [Add/Remove Line Numbers Tool](https://peasytext.com/tools/line-numbers/)
 
 ### Pattern Extraction
 
@@ -223,6 +241,8 @@ print(extract(text, "urls"))     # ["https://example.com,"]
 print(extract(text, "phones"))   # ["+1-555-0123"]
 ```
 
+Learn more: [Text Extractor Tool](https://peasytext.com/tools/text-extractor/)
+
 ### Text Diffing
 
 Compare two texts line by line and measure similarity.
@@ -236,6 +256,8 @@ print(result.removed)     # ["apple"]
 print(result.similarity)  # 0.6667
 ```
 
+Learn more: [Text Diff Tool](https://peasytext.com/tools/text-diff/)
+
 ### Lorem Ipsum
 
 Generate placeholder text by words, sentences, or paragraphs.
@@ -246,6 +268,8 @@ from peasytext import lorem_ipsum
 print(lorem_ipsum(10, "words"))       # 10 lorem ipsum words
 print(lorem_ipsum(3, "paragraphs"))   # 3 paragraphs of text
 ```
+
+Learn more: [Lorem Ipsum Generator](https://peasytext.com/tools/lorem-ipsum-generator/)
 
 ### JSON Formatting
 
@@ -259,6 +283,8 @@ print(json_minify('{ "a": 1 }'))      # {"a":1}
 print(json_validate('{"key": "ok"}')) # True
 ```
 
+Learn more: [JSON Formatter Tool](https://peasytext.com/tools/json-formatter/) · [What is JSON?](https://peasytext.com/glossary/json/)
+
 ### Text Reversal
 
 Reverse text by characters, words, or lines.
@@ -270,6 +296,8 @@ print(reverse_text("hello", "characters"))      # "olleh"
 print(reverse_text("hello world", "words"))     # "world hello"
 print(reverse_text("a\nb\nc", "lines"))         # "c\nb\na"
 ```
+
+Learn more: [Reverse Text Tool](https://peasytext.com/tools/reverse-text/)
 
 ## Command-Line Interface
 
@@ -368,17 +396,26 @@ spec = api.openapi_spec()
 
 ## Learn More About Text Processing
 
-- **Tools**: [Text Case Converter](https://peasytext.com/tools/text-case-converter/) · [Word Counter](https://peasytext.com/tools/word-counter/) · [Slug Generator](https://peasytext.com/tools/slug-generator/) · [Base64 Encoder](https://peasytext.com/tools/base64-encoder-decoder/)
-- **Guides**: [Text Processing Guide](https://peasytext.com/guides/) · [Glossary](https://peasytext.com/glossary/)
+- **Tools**: [Text Case Converter](https://peasytext.com/tools/text-case-converter/) · [Word Counter](https://peasytext.com/tools/text-counter/) · [Slug Generator](https://peasytext.com/tools/slug-generator/) · [Base64 Encoder/Decoder](https://peasytext.com/tools/base64-encode-decode/) · [JSON Formatter](https://peasytext.com/tools/json-formatter/)
+- **Reference**: [Text Processing Glossary](https://peasytext.com/glossary/) · [File Formats](https://peasytext.com/formats/)
+- **Guides**: [Text Processing Guides](https://peasytext.com/guides/) · [Use Cases](https://peasytext.com/use-cases/)
+- **API**: [REST API Docs](https://peasytext.com/developers/) · [OpenAPI Spec](https://peasytext.com/api/openapi.json)
 - **Hub**: [Peasy Tools](https://peasytools.com) — 255 free browser-based tools across 16 categories
+
+## Also Available
+
+| Platform | Install | Link |
+|----------|---------|------|
+| **npm** | `npm install peasytext` | [npm](https://www.npmjs.com/package/peasytext) |
+| **MCP** | `uvx --from "peasytext[mcp]" python -m peasytext.mcp_server` | [Config](#mcp-server-claude-cursor-windsurf) |
 
 ## Peasy Developer Tools
 
-| Package | PyPI | Description |
-|---------|------|-------------|
-| **peasytext** | [PyPI](https://pypi.org/project/peasytext/) | **Text processing toolkit — 15 tools** — [peasytext.com](https://peasytext.com) |
+| Package | PyPI | npm | Description |
+|---------|------|-----|-------------|
+| **peasytext** | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | **Text processing toolkit — 15 tools** — [peasytext.com](https://peasytext.com) |
 
-More packages coming soon for all 15 Peasy categories (PDF, Image, Dev, CSS, SEO, Math, and more).
+More packages coming soon for all 16 Peasy categories (PDF, Image, Dev, CSS, SEO, Math, and more). See the full tool suite at [peasytools.com](https://peasytools.com).
 
 ## License
 
