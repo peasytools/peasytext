@@ -1,0 +1,97 @@
+[project]
+name = "peasytext"
+version = "0.1.0"
+description = "Pure Python text processing toolkit — case conversion, slug generation, word counting, Base64, URL encoding, pattern extraction, and 9 more tools. Zero dependencies."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Peasy Tools" }]
+keywords = [
+    "text",
+    "string",
+    "case-conversion",
+    "slug",
+    "slugify",
+    "word-count",
+    "base64",
+    "url-encode",
+    "html-entities",
+    "deduplicate",
+    "lorem-ipsum",
+    "text-tools",
+    "find-replace",
+    "json-format",
+    "line-sort",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+    "Environment :: Console",
+]
+dependencies = []
+
+[project.optional-dependencies]
+api = ["httpx>=0.27"]
+cli = ["typer>=0.15", "rich>=13.0"]
+mcp = ["mcp>=1.0"]
+all = ["peasytext[api,cli,mcp]"]
+
+[project.scripts]
+peasytext = "peasytext.cli:app"
+
+[project.entry-points."mcp.servers"]
+peasytext = "peasytext.mcp_server:mcp"
+
+[project.urls]
+Homepage = "https://peasytext.com"
+"Text Case Converter" = "https://peasytext.com/tools/text-case-converter/"
+"Word Counter" = "https://peasytext.com/tools/word-counter/"
+"Slug Generator" = "https://peasytext.com/tools/slug-generator/"
+Documentation = "https://peasytext.com/developers/"
+Repository = "https://github.com/peasytools/peasytext"
+Issues = "https://github.com/peasytools/peasytext/issues"
+Changelog = "https://github.com/peasytools/peasytext/releases"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/peasytext"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "mcp>=1.0",
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "rich>=13.0",
+    "ruff>=0.15.4",
+    "typer>=0.15",
+]
