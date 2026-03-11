@@ -11,6 +11,10 @@ Extracted from the client-side engines at [peasytext.com](https://peasytext.com)
 
 > **Try the interactive tools at [peasytext.com](https://peasytext.com)** — [Text Case Converter](https://peasytext.com/tools/text-case-converter/), [Word Counter](https://peasytext.com/tools/word-counter/), [Slug Generator](https://peasytext.com/tools/slug-generator/), [Base64 Encoder](https://peasytext.com/tools/base64-encoder-decoder/), [JSON Formatter](https://peasytext.com/tools/json-formatter/)
 
+<p align="center">
+  <img src="demo.gif" alt="peasytext demo — case conversion, slug generation, word counting in Python REPL" width="800">
+</p>
+
 ## Table of Contents
 
 - [Install](#install)
@@ -413,10 +417,17 @@ spec = api.openapi_spec()
 
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| **peasytext** | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | **Text processing toolkit — 15 tools** — [peasytext.com](https://peasytext.com) |
-
-More packages coming soon for all 16 Peasy categories (PDF, Image, Dev, CSS, SEO, Math, and more). See the full tool suite at [peasytools.com](https://peasytools.com).
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | — | PDF merge, split, compress, encrypt — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, watermark — [peasyimage.com](https://peasyimage.com) |
+| **peasytext** | **[PyPI](https://pypi.org/project/peasytext/)** | **[npm](https://www.npmjs.com/package/peasytext)** | **Text case, slug, encode, diff — [peasytext.com](https://peasytext.com)** |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradient, shadow, flexbox, grid — [peasycss.com](https://peasycss.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | — | Archive & compression — gzip, zip, tar — [peasycompress.com](https://peasycompress.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | — | Document conversion — Markdown, CSV, HTML — [peasydocument.com](https://peasydocument.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, GIF, thumbnails — [peasyvideo.com](https://peasyvideo.com) |
+| peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | — | Unified CLI: `peasy pdf merge a.pdf b.pdf` — [peasytools.com](https://peasytools.com) |
+| peasy-mcp | [PyPI](https://pypi.org/project/peasy-mcp/) | — | Unified MCP hub for AI assistants — [peasytools.com](https://peasytools.com) |
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT
