@@ -9,7 +9,7 @@ Pure Python text processing toolkit — 15 tools for case conversion, slug gener
 
 Extracted from the client-side engines at [peasytext.com](https://peasytext.com), where all 15 text tools run entirely in the browser. This Python package provides the same functionality for server-side and CLI usage.
 
-> **Try the interactive tools at [peasytext.com](https://peasytext.com)** — [Text Case Converter](https://peasytext.com/tools/text-case-converter/), [Word Counter](https://peasytext.com/tools/word-counter/), [Slug Generator](https://peasytext.com/tools/slug-generator/), [Base64 Encoder](https://peasytext.com/tools/base64-encoder-decoder/), [JSON Formatter](https://peasytext.com/tools/json-formatter/)
+> **Try the interactive tools at [peasytext.com](https://peasytext.com)** — [Text Tools](https://peasytext.com/), [Text Glossary](https://peasytext.com/glossary/), [Text Formats](https://peasytext.com/formats/)
 
 <p align="center">
   <img src="demo.gif" alt="peasytext demo — case conversion, slug generation, word counting in Python REPL" width="800">
@@ -108,7 +108,7 @@ print(to_case("user full name", "snake"))     # "user_full_name"
 print(to_case("user full name", "constant"))  # "USER_FULL_NAME"
 ```
 
-Learn more: [Text Case Converter](https://peasytext.com/tools/text-case-converter/) · [Case Conversion Glossary](https://peasytext.com/glossary/)
+Learn more: [PeasyText Tools](https://peasytext.com/) · [Text Glossary](https://peasytext.com/glossary/)
 
 ### Slug Generation
 
@@ -126,7 +126,7 @@ print(slugify("Hello World", separator="_"))           # "hello_world"
 print(slugify("A very long title here", max_length=10))  # "a-very"
 ```
 
-Learn more: [Slug Generator Tool](https://peasytext.com/tools/slug-generator/) · [What is a URL Slug?](https://peasytext.com/glossary/url-slug/)
+Learn more: [PeasyText](https://peasytext.com/) · [Text Glossary](https://peasytext.com/glossary/)
 
 ### Text Statistics
 
@@ -142,7 +142,7 @@ print(f"Paragraphs: {stats.paragraphs}")      # 2
 print(f"Reading time: {stats.reading_time}")   # "< 1 min"
 ```
 
-Learn more: [Word Counter Tool](https://peasytext.com/tools/text-counter/) · [Text Statistics Guide](https://peasytext.com/guides/)
+Learn more: [PeasyText](https://peasytext.com/) · [Text Guides](https://peasytext.com/guides/)
 
 ### Line Sorting
 
@@ -157,7 +157,7 @@ print(sort_lines(text, "length"))       # apple\nbanana\ncherry
 print(sort_lines("10\n2\n30", "numeric"))  # 2\n10\n30
 ```
 
-Learn more: [Sort Lines Tool](https://peasytext.com/tools/sort-lines/)
+Learn more: [PeasyText](https://peasytext.com/) · [Text Glossary](https://peasytext.com/glossary/)
 
 ### Base64 Encoding
 
@@ -171,7 +171,7 @@ print(encoded)                    # "SGVsbG8sIOS4lueVjCEg8J+MjQ=="
 print(base64_decode(encoded))     # "Hello, 世界! 🌍"
 ```
 
-Learn more: [Base64 Encoder/Decoder](https://peasytext.com/tools/base64-encode-decode/) · [What is Base64?](https://peasytext.com/glossary/base64/)
+Learn more: [PeasyText](https://peasytext.com/) · [Base64 Glossary](https://peasytext.com/glossary/base64/)
 
 ### URL & HTML Encoding
 
@@ -187,7 +187,7 @@ print(html_encode('<script>alert("xss")</script>'))
 # "&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;"
 ```
 
-Learn more: [URL Encoder/Decoder](https://peasytext.com/tools/url-encode-decode/) · [HTML Entity Encoder](https://peasytext.com/tools/html-entity-encoder/)
+Learn more: [PeasyText](https://peasytext.com/) · [Text Glossary](https://peasytext.com/glossary/)
 
 ### Find & Replace
 
@@ -204,7 +204,7 @@ print(find_replace("abc123def456", r"\d+", "NUM", regex=True))
 # "abcNUMdefNUM"
 ```
 
-Learn more: [Find & Replace Tool](https://peasytext.com/tools/find-and-replace/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### Deduplication
 
@@ -217,7 +217,7 @@ print(dedupe_lines("apple\nbanana\napple\ncherry\nbanana"))
 # "apple\nbanana\ncherry"
 ```
 
-Learn more: [Remove Duplicate Lines Tool](https://peasytext.com/tools/remove-duplicate-lines/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### Line Numbers
 
@@ -230,7 +230,7 @@ print(add_line_numbers("first\nsecond\nthird"))
 # "1: first\n2: second\n3: third"
 ```
 
-Learn more: [Add/Remove Line Numbers Tool](https://peasytext.com/tools/line-numbers/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### Pattern Extraction
 
@@ -245,7 +245,7 @@ print(extract(text, "urls"))     # ["https://example.com,"]
 print(extract(text, "phones"))   # ["+1-555-0123"]
 ```
 
-Learn more: [Text Extractor Tool](https://peasytext.com/tools/text-extractor/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### Text Diffing
 
@@ -260,7 +260,7 @@ print(result.removed)     # ["apple"]
 print(result.similarity)  # 0.6667
 ```
 
-Learn more: [Text Diff Tool](https://peasytext.com/tools/text-diff/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### Lorem Ipsum
 
@@ -273,7 +273,7 @@ print(lorem_ipsum(10, "words"))       # 10 lorem ipsum words
 print(lorem_ipsum(3, "paragraphs"))   # 3 paragraphs of text
 ```
 
-Learn more: [Lorem Ipsum Generator](https://peasytext.com/tools/lorem-ipsum-generator/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ### JSON Formatting
 
@@ -287,7 +287,7 @@ print(json_minify('{ "a": 1 }'))      # {"a":1}
 print(json_validate('{"key": "ok"}')) # True
 ```
 
-Learn more: [JSON Formatter Tool](https://peasytext.com/tools/json-formatter/) · [What is JSON?](https://peasytext.com/glossary/json/)
+Learn more: [PeasyText](https://peasytext.com/) · [JSON Glossary](https://peasytext.com/glossary/json/)
 
 ### Text Reversal
 
@@ -301,7 +301,7 @@ print(reverse_text("hello world", "words"))     # "world hello"
 print(reverse_text("a\nb\nc", "lines"))         # "c\nb\na"
 ```
 
-Learn more: [Reverse Text Tool](https://peasytext.com/tools/reverse-text/)
+Learn more: [PeasyText](https://peasytext.com/)
 
 ## Command-Line Interface
 
@@ -400,7 +400,7 @@ spec = api.openapi_spec()
 
 ## Learn More About Text Processing
 
-- **Tools**: [Text Case Converter](https://peasytext.com/tools/text-case-converter/) · [Word Counter](https://peasytext.com/tools/text-counter/) · [Slug Generator](https://peasytext.com/tools/slug-generator/) · [Base64 Encoder/Decoder](https://peasytext.com/tools/base64-encode-decode/) · [JSON Formatter](https://peasytext.com/tools/json-formatter/)
+- **Tools**: [PeasyText Tools](https://peasytext.com/)
 - **Reference**: [Text Processing Glossary](https://peasytext.com/glossary/) · [File Formats](https://peasytext.com/formats/)
 - **Guides**: [Text Processing Guides](https://peasytext.com/guides/) · [Use Cases](https://peasytext.com/use-cases/)
 - **API**: [REST API Docs](https://peasytext.com/developers/) · [OpenAPI Spec](https://peasytext.com/api/openapi.json)
@@ -421,10 +421,10 @@ spec = api.openapi_spec()
 | peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, watermark — [peasyimage.com](https://peasyimage.com) |
 | **peasytext** | **[PyPI](https://pypi.org/project/peasytext/)** | **[npm](https://www.npmjs.com/package/peasytext)** | **Text case, slug, encode, diff — [peasytext.com](https://peasytext.com)** |
 | peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradient, shadow, flexbox, grid — [peasycss.com](https://peasycss.com) |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | — | Archive & compression — gzip, zip, tar — [peasycompress.com](https://peasycompress.com) |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | — | Document conversion — Markdown, CSV, HTML — [peasydocument.com](https://peasydocument.com) |
-| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
-| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, GIF, thumbnails — [peasyvideo.com](https://peasyvideo.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | — | Archive & compression — gzip, zip, tar — [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | — | Document conversion — Markdown, CSV, HTML — [peasytools.com](https://peasytools.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | — | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | — | Video trim, resize, GIF, thumbnails — [peasyvideo.com](https://peasyvideo.com) |
 | peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | — | Unified CLI: `peasy pdf merge a.pdf b.pdf` — [peasytools.com](https://peasytools.com) |
 | peasy-mcp | [PyPI](https://pypi.org/project/peasy-mcp/) | — | Unified MCP hub for AI assistants — [peasytools.com](https://peasytools.com) |
 
