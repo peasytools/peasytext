@@ -1,6 +1,6 @@
 # peasytext
 
-[![PyPI](https://img.shields.io/pypi/v/peasytext)](https://pypi.org/project/peasytext/)
+[![PyPI version](https://agentgif.com/badge/pypi/peasytext/version.svg)](https://pypi.org/project/peasytext/)
 [![Python](https://img.shields.io/pypi/pyversions/peasytext)](https://pypi.org/project/peasytext/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://pypi.org/project/peasytext/)
