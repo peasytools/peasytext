@@ -39,6 +39,7 @@ Extracted from the client-side engines at [peasytext.com](https://peasytext.com)
 - [REST API Client](#rest-api-client)
 - [API Reference](#api-reference)
 - [Learn More About Text Processing](#learn-more-about-text-processing)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -370,6 +371,21 @@ api = PeasyTextAPI()
 tools = api.list_tools()
 glossary = api.search("encoding")
 spec = api.openapi_spec()
+
+# Search the text processing glossary for technical terms
+terms = api.search_glossary("unicode")
+for term in terms:
+    print(f"{term['term']}: {term['definition']}")
+
+# Browse text processing guides and tutorials
+guides = api.list_guides()
+for guide in guides:
+    print(f"{guide['title']}: {guide['url']}")
+
+# Discover use cases for text operations
+use_cases = api.list_use_cases()
+for uc in use_cases:
+    print(f"{uc['title']}: {uc['description']}")
 ```
 
 ## API Reference
@@ -400,33 +416,36 @@ spec = api.openapi_spec()
 
 ## Learn More About Text Processing
 
-- **Tools**: [PeasyText Tools](https://peasytext.com/)
-- **Reference**: [Text Processing Glossary](https://peasytext.com/glossary/) · [File Formats](https://peasytext.com/formats/)
-- **Guides**: [Text Processing Guides](https://peasytext.com/guides/) · [Use Cases](https://peasytext.com/use-cases/)
+- **Tools**: [Case Converter](https://peasytext.com/tools/case-converter/) · [Slug Generator](https://peasytext.com/tools/slug-generator/) · [Word Counter](https://peasytext.com/tools/word-counter/) · [All Text Tools](https://peasytext.com/)
+- **Guides**: [Text Encoding Guide](https://peasytext.com/guides/text-encoding/) · [Regex Guide](https://peasytext.com/guides/regex/) · [All Guides](https://peasytext.com/guides/)
+- **Glossary**: [Unicode](https://peasytext.com/glossary/unicode/) · [Base64](https://peasytext.com/glossary/base64/) · [All Terms](https://peasytext.com/glossary/)
+- **Formats**: [Plain Text](https://peasytext.com/formats/plain-text/) · [JSON](https://peasytext.com/formats/json/) · [All Formats](https://peasytext.com/formats/)
 - **API**: [REST API Docs](https://peasytext.com/developers/) · [OpenAPI Spec](https://peasytext.com/api/openapi.json)
-- **Hub**: [Peasy Tools](https://peasytools.com) — 255 free browser-based tools across 16 categories
 
 ## Also Available
 
 | Platform | Install | Link |
 |----------|---------|------|
-| **npm** | `npm install peasytext` | [npm](https://www.npmjs.com/package/peasytext) |
+| **TypeScript / npm** | `npm install peasytext` | [npm](https://www.npmjs.com/package/peasytext) |
+| **Go** | `go get github.com/peasytools/peasytext-go` | [pkg.go.dev](https://pkg.go.dev/github.com/peasytools/peasytext-go) |
+| **Rust** | `cargo add peasytext` | [crates.io](https://crates.io/crates/peasytext) |
+| **Ruby** | `gem install peasytext` | [RubyGems](https://rubygems.org/gems/peasytext) |
 | **MCP** | `uvx --from "peasytext[mcp]" python -m peasytext.mcp_server` | [Config](#mcp-server-claude-cursor-windsurf) |
 
 ## Peasy Developer Tools
 
+Part of the [Peasy](https://peasytools.com) open-source developer tools ecosystem.
+
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | — | PDF merge, split, compress, encrypt — [peasypdf.com](https://peasypdf.com) |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, watermark — [peasyimage.com](https://peasyimage.com) |
-| **peasytext** | **[PyPI](https://pypi.org/project/peasytext/)** | **[npm](https://www.npmjs.com/package/peasytext)** | **Text case, slug, encode, diff — [peasytext.com](https://peasytext.com)** |
-| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradient, shadow, flexbox, grid — [peasycss.com](https://peasycss.com) |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | — | Archive & compression — gzip, zip, tar — [peasytools.com](https://peasytools.com) |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | — | Document conversion — Markdown, CSV, HTML — [peasytools.com](https://peasytools.com) |
-| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | — | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
-| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | — | Video trim, resize, GIF, thumbnails — [peasyvideo.com](https://peasyvideo.com) |
-| peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | — | Unified CLI: `peasy pdf merge a.pdf b.pdf` — [peasytools.com](https://peasytools.com) |
-| peasy-mcp | [PyPI](https://pypi.org/project/peasy-mcp/) | — | Unified MCP hub for AI assistants — [peasytools.com](https://peasytools.com) |
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress, 20 operations — [peasyimage.com](https://peasyimage.com) |
+| **peasytext** | **[PyPI](https://pypi.org/project/peasytext/)** | **[npm](https://www.npmjs.com/package/peasytext)** | **Text case, slugify, word count, encoding — [peasytext.com](https://peasytext.com)** |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, flexbox, grid generators — [peasycss.com](https://peasycss.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, brotli archive operations — [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversions — [peasyformats.com](https://peasyformats.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio convert, trim, merge, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, GIF conversion — [peasyvideo.com](https://peasyvideo.com) |
 
 ## License
 
