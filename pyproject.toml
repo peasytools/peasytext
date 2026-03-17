@@ -1,6 +1,6 @@
 [project]
 name = "peasytext"
-version = "0.1.1"
+version = "0.2.0"
 description = "Pure Python text processing toolkit — case conversion, slug generation, word counting, Base64, URL encoding, pattern extraction, and 9 more tools. Zero dependencies."
 readme = "README.md"
 license = "MIT"
