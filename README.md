@@ -172,7 +172,7 @@ print(encoded)                    # "SGVsbG8sIOS4lueVjCEg8J+MjQ=="
 print(base64_decode(encoded))     # "Hello, 世界! 🌍"
 ```
 
-Learn more: [PeasyText](https://peasytext.com/) · [Base64 Glossary](https://peasytext.com/glossary/base64/)
+Learn more: [PeasyText](https://peasytext.com/) · [Base64 Glossary](https://peasytext.com/glossary/)
 
 ### URL & HTML Encoding
 
@@ -288,7 +288,7 @@ print(json_minify('{ "a": 1 }'))      # {"a":1}
 print(json_validate('{"key": "ok"}')) # True
 ```
 
-Learn more: [PeasyText](https://peasytext.com/) · [JSON Glossary](https://peasytext.com/glossary/json/)
+Learn more: [PeasyText](https://peasytext.com/) · [JSON Glossary](https://peasytext.com/glossary/)
 
 ### Text Reversal
 
@@ -416,10 +416,10 @@ for uc in use_cases:
 
 ## Learn More About Text Processing
 
-- **Tools**: [Case Converter](https://peasytext.com/tools/case-converter/) · [Slug Generator](https://peasytext.com/tools/slug-generator/) · [Word Counter](https://peasytext.com/tools/word-counter/) · [All Text Tools](https://peasytext.com/)
-- **Guides**: [Text Encoding Guide](https://peasytext.com/guides/text-encoding/) · [Regex Guide](https://peasytext.com/guides/regex/) · [All Guides](https://peasytext.com/guides/)
-- **Glossary**: [Unicode](https://peasytext.com/glossary/unicode/) · [Base64](https://peasytext.com/glossary/base64/) · [All Terms](https://peasytext.com/glossary/)
-- **Formats**: [Plain Text](https://peasytext.com/formats/plain-text/) · [JSON](https://peasytext.com/formats/json/) · [All Formats](https://peasytext.com/formats/)
+- **Tools**: [Case Converter](https://peasytext.com/text/case-converter/) · [Slug Generator](https://peasytext.com/text/slug-generator/) · [Word Counter](https://peasytext.com/text/word-counter/) · [All Text Tools](https://peasytext.com/)
+- **Guides**: [Text Encoding Guide](https://peasytext.com/guides/) · [Regex Guide](https://peasytext.com/guides/) · [All Guides](https://peasytext.com/guides/)
+- **Glossary**: [Unicode](https://peasytext.com/glossary/unicode/) · [Base64](https://peasytext.com/glossary/) · [All Terms](https://peasytext.com/glossary/)
+- **Formats**: [Plain Text](https://peasytext.com/formats/) · [JSON](https://peasytext.com/formats/json/) · [All Formats](https://peasytext.com/formats/)
 - **API**: [REST API Docs](https://peasytext.com/developers/) · [OpenAPI Spec](https://peasytext.com/api/openapi.json)
 
 ## Also Available
