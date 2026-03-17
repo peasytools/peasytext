@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/peasytext)](https://pypi.org/project/peasytext/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://pypi.org/project/peasytext/)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasytext/stars.svg)](https://github.com/peasytools/peasytext)
 
 Pure Python text processing toolkit — 15 tools for case conversion, slug generation, word counting, line sorting, Base64/URL/HTML encoding, find & replace, deduplication, line numbering, pattern extraction, text diffing, Lorem Ipsum generation, JSON formatting, and text reversal. Zero dependencies.
 
