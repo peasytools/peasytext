@@ -13,7 +13,7 @@ Extracted from the client-side engines at [peasytext.com](https://peasytext.com)
 > **Try the interactive tools at [peasytext.com](https://peasytext.com)** — [Text Tools](https://peasytext.com/), [Text Glossary](https://peasytext.com/glossary/), [Text Formats](https://peasytext.com/formats/)
 
 <p align="center">
-  <img src="demo.gif" alt="peasytext demo — case conversion, slug generation, word counting in Python REPL" width="800">
+  <a href="https://agentgif.com/Avip8gKm"><img src="https://media.agentgif.com/Avip8gKm.gif" alt="peasytext demo — case conversion, slug generation, word counting in Python REPL" width="800"></a>
 </p>
 
 ## Table of Contents
